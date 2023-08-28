@@ -1,0 +1,59 @@
+// Hero Section Start 
+
+.heroSection{
+    height: calc(100vh - 90px);
+  
+    & .videoOverLay{
+        // height: 100%;
+        // overflow: hidden;
+        &::before{
+            background: radial-gradient(61.87% 89.24% at 50% 50%,#253857 0,#181c24 100%);
+            content: "";
+            inset: 0;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    & .heroSectionContent{
+        z-index: 5;
+        & .heroContent{
+            // display: flex;
+            // flex-direction: column;
+            & .heroTitle{
+                font-size: 42px;
+                line-height: 50px;
+                color: $white;
+            z-index: 1;
+
+            }
+            & .heroPera{
+                font-size: 18px;
+                color: $white;
+                z-index: 1;
+
+            }
+            
+        }
+    }
+    & .heroFooter{
+        display: flex;
+        z-index: 2;
+        & .heroDoLink{
+            display: flex;
+            transition:all 0.3s ease-in-out;
+            & .heroLinkTitle{
+                font-size: 20px;
+                color: $white;
+                transition:all 0.3s ease-in-out;
+                z-index: 2;
+            }
+           
+            & .heroLink{
+                font-size: 30px;
+                color: $white;
+            }
+        }
+    }
+}

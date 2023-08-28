@@ -1,0 +1,91 @@
+.navbar{
+    height: 90px;
+    & .logo{
+        height: 60px;
+        width: 180px;
+    }
+    & .navbarNav{
+        & .navItem{
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                & ul{
+                    opacity: 1 !important;
+                    visibility: visible;
+                    z-index: 5;
+                    margin-top: 10px;
+                }
+            }
+            
+            & .navLink{
+                color: $black;
+                font-size: 16px;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: $theme1;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+                &.icon{
+                   width: 40px;
+                   height: 40px; 
+                }
+
+            }
+            & .bottomMenu{
+                background: radial-gradient(61.87% 89.24% at 50% 50%,$theme1 0,$theme2 100%);
+                // left: 10px !important;
+                transition: all 0.3s ease-in-out;
+                visibility: hidden;
+                & .bottomMenu2{
+                    left: 10px !important;
+                }
+                & li{
+                    & .bottomList{
+                        font-size: 14px;
+                        color: $white !important;
+                        opacity: 0.7;
+                        transition:  all 0.3s ease-in-out;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            bottom: 0;
+                            background-color: $white;
+                            height: 1px;
+                            width: 0;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            & .ulTitle{
+                font-size: 20px;
+                color: $white;
+
+            }
+            & .liHeading{
+                font-size: 16px;
+                color: $white;
+            }
+        }
+    }
+}
