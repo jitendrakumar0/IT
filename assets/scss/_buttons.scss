@@ -6,7 +6,7 @@
     text-transform: uppercase;
     text-decoration: none;
     background-color:$theme1;
-    background-image: linear-gradient(90deg, $theme1, $theme2);
+    background-image: linear-gradient(90deg, $theme3, $theme1);
     padding: 7px 15px;
     border-radius: 4px;
     border: none;
@@ -57,7 +57,7 @@
         }
     }
     &:hover{
-        transform: translateY(-3px);
+        transform:scale(0.9);
         color: $white;
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
     }
@@ -67,3 +67,75 @@
 
 }
 
+@include media-breakpoint-down(md) {
+    .themBtn {
+        font-size: 16px;
+ 
+        &::before{
+   
+        }
+        &:after{
+
+        }
+        &.butnNew{
+         
+            &::before{
+            
+            }
+            &::after{
+             
+            }
+            &:hover{
+                &::before{
+                    
+                }
+                &::after{
+                 
+                }
+            }
+        }
+        &:hover{
+        
+        }
+        & span{
+           
+        }
+    
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .themBtn {
+    font-size: 14px;
+        &::before{
+   
+        }
+        &:after{
+
+        }
+        &.butnNew{
+         
+            &::before{
+            
+            }
+            &::after{
+             
+            }
+            &:hover{
+                &::before{
+                    
+                }
+                &::after{
+                 
+                }
+            }
+        }
+        &:hover{
+        
+        }
+        & span{
+           
+        }
+    
+    }
+}

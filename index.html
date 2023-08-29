@@ -62,37 +62,36 @@
 <body class="overflowhidden">
 <!-- * navbar start -->
 
-<nav class="navbar fixedtop navbar-expand-lg container-fluid navbar d-flex align-items-center justify-content-between" aria-label="Offcanvas navbar large">
+<nav class="navbar fixed-top navbar-expand-lg container-fluid navbar  " id="navbar" aria-label="Offcanvas navbar large">
     <div class="container">
       <a class="navbar-brand logo" href="#"><img src="assets/img/header/logo.webp" alt="logo" class=" img-fluid w-100 h-100"></a>
-      <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler border-0 shadow-none bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="iconMenu"> <img src="assets/img/header/Menu.svg" alt=""></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 navbarNav m-0 gap-2">
-            <li class="nav-item navItem">
-              <a class="nav-link navLink active icon" aria-current="page" href="#"><img src="assets/img/header/House.svg" alt="house" class="img-fluid w-100 h-100"></a>
-            </li>
-            <li class="nav-item navItem">
-              <a class="nav-link navLink" href="#">Company</a>
-              <ul class="list-unstyled bottomMenu position-absolute opacity-0 mb-0 p-3 d-flex flex-column gap-2 rounded-bottom-3">
-                <li><a href="javascript:;" class="text-decoration-none bottomList">About Us</a></li>
-                <li><a href="javascript:;" class="text-decoration-none bottomList">Testimonials</a></li>
-                <li><a href="javascript:;" class="text-decoration-none bottomList">Life @IMG</a></li>
-                <li><a href="javascript:;" class="text-decoration-none bottomList">Career</a></li>
-                <li><a href="javascript:;" class="text-decoration-none bottomList">Case Study</a></li>
-              </ul>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink" href="#">Services</a>
-                <ul class="list-unstyled w-100 start-0 bottomMenu2  bottomMenu position-absolute opacity-0 mb-0 p-5 d-flex flexcolumn gap2 rounded-bottom-3 row">
-                    <div class="col-3">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Mobile</a></div>
+        <ul class="navbar-nav justify-content-end flex-grow-1 navbarNav m-0 gap-lg-4 gap-0 me-5">
+        <li class="nav-item navItem">
+          <a class="nav-link navLink active icon" aria-current="page" href="#"><img src="assets/img/header/House.svg" alt="house" class="img-fluid w-100 h-100"></a>
+        </li>
+        <li class="nav-item navItem">
+          <a class="nav-link navLink" href="#">Company</a>
+          <ul class="list-unstyled bottomMenu position-absolute opacity-0 mb-0 p-3 d-flex flex-column gap-2 rounded-bottom-3">
+            <div>
+                <ul class="innerUlSection list-unstyled ps-4 pt-0 pe-4 ">
+                    <li><a href="javascript:;" class="text-decoration-none bottomList">About Us</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none bottomList">Testimonials</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none bottomList">Life @IMG</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none bottomList">Career</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none bottomList">Case Study</a></li>
+                </ul>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item navItem">
+            <a class="nav-link navLink" href="#">Services</a>
+            <ul class="list-unstyled w-100 start-0  bottomMenu position-absolute opacity-0 mb-0 p-5 d-flex flexcolumn gap2 rounded-bottom-3 row">
+                <div class="col-lg-3">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Mobile</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 pb4">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Mobile App Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Android App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">iOS App</a></li>
@@ -101,65 +100,76 @@
                         <li><a href="javascript:;" class="text-decoration-none bottomList">React Native App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Web App</a></li>
 
-                    </div>
-                    <div class="col-3">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Web</a></div>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Web</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 pb4">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Web Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Website Design</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Website Redesign</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Responsive Website Design</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">API Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">CMS Website Development</a></li>
-                    </div>
-                    <div class="col-3">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Software</a></div>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Software</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 pb4">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Custom Software Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">CRM Software Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">SaaS Development</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">ERP Software Development</a></li>
-                    </div>
-                    <div class="col-3">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Fantasy Sports App</a></div>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Fantasy Sports App</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 ">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Fantasy Sports App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Cricket App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Football App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Kabbadi App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Stock Market App</a></li>
-                    </div>
-                    <div class="col-6">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Ecommerce</a></div>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Ecommerce</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 pb4">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Ecommerce</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Ecommerce Website Development</a></li>
-                    </div>
-                    <div class="col-6">
-                        <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Blockchain</a></div>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Blockchain</a></div>
+                    <ul class="innerUlSection positionabsolute list-unstyled bg-transparent ps-4 pt-0 pe-4 pb4">
                         <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Blockchain</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Cricket App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Football App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Kabbadi App</a></li>
                         <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Stock Market App</a></li>
-                    </div>
-                </ul>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink " aria-current="page" href="#">Trending Solutions</a>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink " aria-current="page" href="#">Hire Developers</a>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink " aria-current="page" href="#">Work</a>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink " aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item navItem">
-                <a class="nav-link navLink " aria-current="page" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <a href="javascript:;" class='themBtn butnNew'><span>Let's Talk</span></a>
-        </div>
-      </div>
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <!-- <li class="nav-item navItem">
+            <a class="nav-link navLink " aria-current="page" href="#">Trending Solutions</a>
+        </li> -->
+        <!-- <li class="nav-item navItem">
+            <a class="nav-link navLink " aria-current="page" href="#">Hire Developers</a>
+        </li>
+        <li class="nav-item navItem">
+            <a class="nav-link navLink " aria-current="page" href="#">Work</a>
+        </li> -->
+        <li class="nav-item navItem">
+            <a class="nav-link navLink " aria-current="page" href="#">Blog</a>
+        </li>
+        <li class="nav-item navItem">
+            <a class="nav-link navLink " aria-current="page" href="#">Contact Us</a>
+        </li>
+        </ul>
+        <a href="javascript:;" class='themBtn butnNew mt-lg-0 mt-2 d-lg-block d-none'><span>Let's Talk</span></a>
     </div>
 </nav>
 <!-- * navbar End -->
@@ -173,35 +183,776 @@
             </video>
         </div>
         <div class="container w-100 h-100">
-            <div class="row heroSectionContent">
-                <div class="col-8 h-100">
-                    <div class="heroContent d-flex flex-column">
-                        <div class="heroTitle fw-bold">End-To-End Digital Services To Transform Your Business</div>
-                        <div class="heroPera fw-medium py-2">Being an IT Consulting Company, we deliver robust web and mobile applications for businesses. Our team has experience and expertise to build high-end software applications for diverse market. The resources on board makes us competent to provide technological solution for any business.</div>
-                        <div class="d-inline-block pt-3">
-                            <a href="javascript:;" class="themBtn">Explore Our Work </a>
+            <div class="row heroSectionContent h-100 align-items-center">
+                <div class="col-12 pt-5">
+                    <div class="row mx-0">
+                        <div class="col-xl-8 col-lg-9  h-100 pt-5">
+                            <div class="heroContent d-flex flex-column pt-md-5">
+                                <div class="heroTitle fw-bold">End-To-End Digital Services To Transform Your Business</div>
+                                <div class="heroPera fw-medium py-2">Being an IT Consulting Company, we deliver robust web and mobile applications for businesses. Our team has experience and expertise to build high-end software applications for diverse market. The resources on board makes us competent to provide technological solution for any business.</div>
+                                <div class="d-inline-block pt-3">
+                                    <a href="javascript:;" class="themBtn butnNew">Explore Our Work </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 heroFooter mt-auto">
-                    <div class="row">
-                        <div class="col-3">
-                            <a href="javascript:;" class="text-decoration-none d-flex z-5 align-items-center heroDoLink"> <span class="heroLink me-1">01</span> <span class="heroLinkTitle"></span> What We Do </a>
+                <div class="col-12 d-lg-block d-none heroFooter mt-auto border-top border-theme3">
+                    <div class="row align-items-center justify-content-center w-100">
+                        <div class="col">
+                            <a href="javascript:;" class=" my-4 text-decoration-none d-flex z-5 align-items-center justify-content-center heroDoLink"> <span class="heroLink me-1 d-inline-flex">01</span> <span class="heroLinkTitle d-inline-flex">Trending Solutions </span> </a>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:;" class=" my-4 text-decoration-none d-flex z-5 align-items-center justify-content-center heroDoLink"> <span class="heroLink me-1 d-inline-flex">02</span> <span class="heroLinkTitle d-inline-flex">Hire Developers </span> </a>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:;" class=" my-4 text-decoration-none d-flex z-5 align-items-center justify-content-center heroDoLink"> <span class="heroLink me-1 d-inline-flex">03</span> <span class="heroLinkTitle d-inline-flex">Work </span> </a>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:;" class=" my-4 text-decoration-none d-flex z-5 align-items-center justify-content-center heroDoLink"> <span class="heroLink me-1 d-inline-flex">04</span> <span class="heroLinkTitle d-inline-flex">Blog </span> </a>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:;" class=" my-4 text-decoration-none d-flex z-5 align-items-center justify-content-center heroDoLink"> <span class="heroLink me-1 d-inline-flex">05</span> <span class="heroLinkTitle d-inline-flex">Lates News  </span> </a>
                         </div>
                     </div>
                 </div>
+                <div class="heroCircleImg position-absolute"><img src="assets/img/index/herosvground.svg" alt="herosection" class="img-fluid w-100 h-100"></div>
             </div>
         </div>
     </div>
 <!-- * Hero Section end -->
 
-<div>
-    <div class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit deleniti dolore sit, atque ab, vel praesentium, nesciunt aperiam iure perspiciatis animi quas magnam ea neque dolores quae qui voluptates ratione eveniet repellendus odit doloremque explicabo molestias? Voluptatibus accusantium dolor laborum sunt. Nesciunt quia, esse numquam, facilis quaerat maxime veritatis repellendus eligendi quis exercitationem non. Vel eaque neque quia delectus cupiditate alias quibusdam quam eius rem necessitatibus. Commodi placeat hic, sequi quis similique sit quas delectus velit voluptatibus magni vel possimus molestiae omnis praesentium doloribus totam, officiis deserunt? Reiciendis animi soluta facere corrupti dolorum quibusdam perspiciatis fugit rem nulla aperiam enim, debitis dolorem aut voluptatibus nesciunt optio id provident, atque quisquam deleniti vitae qui consectetur iure. Illum velit molestias deleniti totam recusandae unde delectus maiores et quisquam fuga ad dolorem, nam hic ab optio, sequi quibusdam ea illo culpa dolore. Numquam ratione aliquam maxime omnis culpa tenetur unde rerum, facilis optio fuga quidem veniam quis possimus nemo hic nam ipsam expedita voluptate? Beatae voluptas sequi corporis pariatur quaerat nemo, eum dicta ipsam non corrupti incidunt nulla provident laudantium dolorem consectetur rerum laborum eaque, aspernatur delectus molestiae tenetur. Vel, doloribus! Voluptatem quasi veritatis, suscipit perspiciatis aliquid, nesciunt in eaque expedita explicabo debitis corporis, accusantium ab quisquam. Maiores, consequatur maxime optio, in odit, ratione nesciunt neque vitae sunt vel dolorum nobis officia odio quod eveniet dolore quasi tempora mollitia pariatur id dicta. Nam libero sequi nostrum molestias ipsam amet recusandae possimus velit expedita! Quas facilis quasi pariatur voluptate, labore magni at repellat tempora hic provident cupiditate explicabo deleniti neque sequi saepe molestias? Doloribus inventore dicta ut? Cupiditate alias laborum at placeat perspiciatis atque ratione laboriosam. Natus assumenda dignissimos iure magnam repudiandae fugit quaerat temporibus voluptas minus, veniam sapiente nostrum cupiditate porro. Unde, repudiandae soluta pariatur impedit non, expedita facilis adipisci incidunt at ut eligendi aliquid beatae nihil optio sapiente voluptas ex corrupti id quidem voluptatibus temporibus distinctio. Animi molestias ratione aliquam earum. Vero praesentium harum odio voluptates, dicta laboriosam eum fugiat, provident labore molestiae ab nisi in quidem! Reprehenderit necessitatibus odit culpa sint debitis. Voluptatibus, id dolor esse laudantium dolorum totam earum consequatur obcaecati veritatis. Beatae quia, dolores expedita minima, magnam laboriosam perferendis adipisci esse, iusto veniam odio fugit. Possimus, ut officia reiciendis saepe numquam cumque! Quidem eum eius totam, iusto quos ut sint. Earum aliquam fuga eos deserunt rerum doloribus possimus inventore eum labore, iusto delectus neque laudantium ex commodi perspiciatis quam, atque recusandae iure nulla vel iste provident est architecto veritatis. Quaerat id nemo pariatur sunt corporis asperiores nulla, incidunt recusandae fugit maiores consequuntur quidem dolorem aspernatur repudiandae animi, aut ipsam maxime quae cupiditate distinctio. Vel maxime dolore error inventore quibusdam, et sunt natus quis est explicabo dolorem autem quo eius, officiis officia corporis iure nobis. Ex esse, voluptates, quae alias atque reprehenderit molestias dignissimos rem praesentium repellendus nostrum enim, tempore expedita sed ab quis consectetur! Necessitatibus ipsa reprehenderit magni libero deserunt corporis vero assumenda aliquam, sint consectetur nam culpa dolore perferendis labore nesciunt porro numquam placeat quo illo ea aut!</div>
+<!-- * about Section start -->
+
+<div class="container-fluid aboutUsSection py-5">
+    <div class="container">
+        <div class="row align-items-center gap-md-0 gap-2 z-3">
+            <div class="col-md-4 border-end vrBorder">
+                <div class="aboutImg d-flex align-items-center justify-content-center mx-auto position-relative"><img src="assets/img/header/logo.webp" alt="logo" class="img-fluid w-100 h-100"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-lg-11 ms-auto text-md-start text-center">
+                        <div class="sectionTitle fw-normal pb-md-1 position-relative">About Us</div>
+                        <div class="pera pt-md-2 pt-1 position-relative">Code To The Future is the <strong>Leader for Computer Science Immersion</strong> . Having been <strong>highlighted by the White House</strong>  for helping start America’s first elementary Computer Science Magnet Schools, Code To The Future provides the <strong> premier Solution for Districts and Families</strong> .</div>
+                        <div class="pt-sm-5 pt-3">
+                            <a href="javascript:;" class="themBtn butnNew  position-relative">Learn More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </div>
+<!-- * about Section end -->
+
+
+
+<!-- * IT Consulting Section start -->
+    <div class="container-fluid itConsulting py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 sideNav py-4">
+                    <div>
+                        <ul class="nav nav-pills mb-3 d-flex flex-column border-0 shadow-none navPills" id="pills-tab" role="tablist">
+                            <li class="nav-item navItem" role="presentation">
+                              <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Software Consulting</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                              <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Mobile App Development</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                              <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web Development</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                              <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Blockchain Development</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                                <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-Solutions-tab" data-bs-toggle="pill" data-bs-target="#pills-Solutions" type="button" role="tab" aria-controls="pills-Solutions" aria-selected="false" >Ecommerce Solutions</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                                <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-Hire-tab" data-bs-toggle="pill" data-bs-target="#pills-Hire" type="button" role="tab" aria-controls="pills-Hire" aria-selected="false" >Hire Developers</button>
+                            </li>
+                            <li class="nav-item navItem" role="presentation">
+                                <button class="nav-link navLink border-0 shadow-none w-100 rounded-0 d-flex align-items-center justify-content-start" id="pills-Trending-tab" data-bs-toggle="pill" data-bs-target="#pills-Trending" type="button" role="tab" aria-controls="pills-Trending" aria-selected="false" >Trending Solutions</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content tabContent" id="pills-tabContent">
+                        <div class="tab-pane fade show active tabPane" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Software Consulting</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Mobile App Development</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera"> Developing robust and fully functional mobile apps to scale your business operations at a faster rate. Specialize in iOS, Android and Hybrid mobile development to make is easily accessible to customers. </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span>  Android App Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> iOS App Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Flutter App Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> React Native App Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Hybrid / Cross Platform Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> PWA Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span>  Wearable App Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex coreIcon"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto pt-4">
+                                            <a href="javascript:;" class="themBtn butnNew"> Explore Mobile App Development Services</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Web Development/div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Blockchain Development</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-Solutions" role="tabpanel" aria-labelledby="pills-Solutions-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Ecommerce Solutions</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-Hire" role="tabpanel" aria-labelledby="pills-Hire-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Hire Developers</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade tabPane" id="pills-Trending" role="tabpanel" aria-labelledby="pills-Trending-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-11 ms-auto">
+                                    <div class="row gap-3">
+                                        <div class="col-12">
+                                            <div class="sectionHeading fw-semibold mb-4">Trending Solutions</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pera">  End-to-End IT consultants to develop a software application to match your business requirements with a touch of user friendliness. Delivering technology for all business types at a competitive pricing.  </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="outterCard bg-opacity-10 bg-primary p-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Software Product Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Pos Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> CRM Software Development  </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row gap-2">
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Fintech Software Development </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> SaaS Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> Custom Software Development  </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <a href="javascript:;" class="text-decoration-none d-flex align-items-center linkDev"><span class="iconDots d-inline-flex me-2"> <img src="assets/img/index/thedots.svg" alt="dots" class="img-fluid w-100 h-100"></span> ERP Software Development </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row gap-2">
+                                                <div class="col-12">
+                                                    <div class="coreTitle">Core Tech:</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row ">
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class="corePera  text-decoration-none d-flex align-items-center flex-column "> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java.webp" alt="java" class="img-fluid w-100 h-100"></span> java</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/php.webp" alt="php" class="img-fluid w-100 h-100"></span> PHP</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/python.webp" alt="python" class="img-fluid w-100 h-100"></span> Python</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/c.webp" alt="c" class="img-fluid w-100 h-100"></span> c#</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/ruby.webp" alt="ruby" class="img-fluid w-100 h-100"></span> Ruby</a>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <a href="javascript:;" class= "corePera text-decoration-none d-flex align-items-center flex-column"> <span class="pb-1 d-inline-flex"><img src="assets/img/index/java-script.webp" alt="javascript" class="img-fluid w-100 h-100"></span> java Script</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- * IT Consulting Section end -->
 
 
 
 
+<div class="offcanvas navOffcanvas mobileHeader offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+    <div class="offcanvas-header offcanvasHeader">
+    <a class="navbar-brand logo" href="#"><img src="assets/img/header/logo.webp" alt="logo" class=" img-fluid w-100 h-100"></a>
+      <button type="button" class="border-0 shadow-none bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/header/Close.svg" alt=""> </button>
+    </div>
+    <div class="offcanvas-body bg-transparent border-0 shadow-none offcanvasBody">
+        <!-- <a class="nav-link navLink active icon" aria-current="page" href="#"><img src="assets/img/header/House.svg" alt="house" class="img-fluid w-100 h-100"> Home</a> -->
+        <a class="nav-link navLink active ps-3 icon" aria-current="page" href="#"> Home</a>
+
+        <div class="accordion bg-transparent mobileAccordion" id="accordionExample">
+
+            <div class="accordion-item border-0 shadow-none bg-transparent accordionItem ps-3 pb-3">
+              <div class="accordion-header border-0 shadow-none bg-transparent accordionHeader">
+                <button class="accordion-button border-0 shadow-none bg-transparent px-0 py-1 accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Company
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse mobileCollapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0 pt-0 accordionBody">
+                    <ul class="innerUlSection list-unstyled">
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">About Us</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Testimonials</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Life @IMG</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Career</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Case Study</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 shadow-none bg-transparent accordionItem ps-3 pb-3">
+                <div class="accordion-header border-0 shadow-none bg-transparent accordionHeader">
+                  <button class="accordion-button border-0 shadow-none px-0 py-1 bg-transparent px0 accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Services
+                  </button>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse  mobileCollapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pb-0 pt-0 accordionBody">
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Mobile</a></div>
+                    <ul class="innerUlSection mb-0 positionabsolute list-unstyled bg-transparent border-start ps-3">
+                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Mobile App Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Android App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">iOS App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Life @IMG</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Flutter App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">React Native App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Web App</a></li>
+                    </ul>
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Web</a></div>
+                    <ul class="innerUlSection mb-0 positionabsolute list-unstyled bg-transparent border-start ps-3">
+                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Web Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Website Design</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Website Redesign</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Responsive Website Design</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">API Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">CMS Website Development</a></li>
+                    </ul>
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Software</a></div>
+                    <ul class="innerUlSection mb-0 positionabsolute list-unstyled bg-transparent border-start ps-3">
+                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Custom Software Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">CRM Software Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">SaaS Development</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">ERP Software Development</a></li>
+                    </ul>
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Fantasy Sports App</a></div>
+                    <ul class="innerUlSection mb-0 positionabsolute list-unstyled bg-transparent border-start ps-3                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Fantasy Sports App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Cricket App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Football App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Kabbadi App</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none bottomList">Fantasy Stock Market App</a></li>
+                    </ul>
+                    <div><a href="javascript:;" class="text-decoration-none fw-bold ulTitle">Ecommerce</a></div>
+                    <ul class="innerUlSection mb-0 positionabsolute list-unstyled bg-transparent border-start ps-3">
+                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Ecommerce</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none pt-2 fw-medium  liHeading">Ecommerce Website Development</a></li>
+
+                        <!-- <li><a href="javascript:;" class="text-decoration-none bottomList"></a></li> -->
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 shadow-none bg-transparent accordionItem ps-3 pb-3">
+                <a class="nav-link navLink " aria-current="page" href="#">Blog</a>
+            </div>
+            <div class="accordion-item border-0 shadow-none bg-transparent accordionItem ps-3 pb-3">
+                <a class="nav-link navLink " aria-current="page" href="#">Contact Us</a>
+            </div>
+            <div class="accordion-item border-0 shadow-none bg-transparent accordionItem ps-3 pb-3">
+                <a class="nav-link navLink " aria-current="page" href="#">Let's Talk</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
 
 
 

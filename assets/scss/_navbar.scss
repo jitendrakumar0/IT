@@ -8,26 +8,28 @@
         & .navItem{
             transition: all 0.3s ease-in-out;
             &:hover{
-                & ul{
+                & .bottomMenu{
                     opacity: 1 !important;
                     visibility: visible;
                     z-index: 5;
                     margin-top: 10px;
+                
                 }
             }
             
             & .navLink{
-                color: $black;
+                color: $white;
                 font-size: 16px;
                 font-weight: 500;
                 transition: all 0.3s ease-in-out;
                 position: relative;
+                padding: 10px 0;
                 &::after{
                     position: absolute;
                     content: '';
                     width: 0;
                     height: 2px;
-                    background-color: $theme1;
+                    background-color: $white;
                     left: 0;
                     bottom: 0;
                     transition: all 0.3s ease-in-out;
@@ -45,46 +47,1060 @@
             }
             & .bottomMenu{
                 background: radial-gradient(61.87% 89.24% at 50% 50%,$theme1 0,$theme2 100%);
-                // left: 10px !important;
+                
                 transition: all 0.3s ease-in-out;
                 visibility: hidden;
-                & .bottomMenu2{
-                    left: 10px !important;
-                }
-                & li{
-                    & .bottomList{
-                        font-size: 14px;
-                        color: $white !important;
-                        opacity: 0.7;
-                        transition:  all 0.3s ease-in-out;
+               
+                & .innerUlSection{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 3px;
+                        height: 100%;
+                        // background: #ff6d00;
+                        background: $theme3;
+
+                    }
+                    & .bottomMenu2{
+                        left: 10px !important;
                         position: relative;
-                        &::before{
-                            position: absolute;
-                            content: '';
-                            left: 0;
-                            bottom: 0;
-                            background-color: $white;
-                            height: 1px;
-                            width: 0;
-                            transition: all 0.3s ease-in-out;
-                        }
-                        &:hover{
-                            opacity: 1;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 3px;
+                        height: 100%;
+                        // background: #ff6d00;
+                        background: $theme3;
+                    }
+                    }
+                    & li{
+            
+                        & .bottomList{
+                            font-size: 14px;
+                            color: $white !important;
+                            opacity: 0.7;
+                            transition:  all 0.3s ease-in-out;
+                            position: relative;
+                            padding-left:20px ;
                             &::before{
-                                width: 100%;
+                                position: absolute;
+                                content: '';
+                                left: 25;
+                                bottom: 0;
+                                background-color: $white;
+                                height: 1px;
+                                width: 0;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: 0px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 12px;
+                                height: 1px;
+                                opacity: 1;
+                                background-color: $white;
+                            }
+                            &:hover{
+                                opacity: 1;
+                                &::before{
+                                    width: 100%;
+                                }
                             }
                         }
                     }
                 }
             }
             & .ulTitle{
-                font-size: 20px;
+                font-size: 18px;
                 color: $white;
 
             }
             & .liHeading{
-                font-size: 16px;
+                font-size: 14px;
                 color: $white;
+            }
+        }
+    }
+ 
+     &.fixed-navbar{
+        background-color: $white;
+        & .navbar-toggler {
+
+            & .iconMenu{
+                & img{
+                    filter: invert(1) !important;
+                }
+            }
+        }
+        & .navbarNav{
+            & .navItem{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    & .bottomMenu{
+                        opacity: 1 !important;
+                        visibility: visible;
+                        z-index: 5;
+                        margin-top: 10px;
+                    
+                    }
+                }
+                
+                & .navLink{
+                    color: $theme1;
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    position: relative;
+                    padding: 10px 0;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        background-color: $theme1;
+                        left: 0;
+                        bottom: 0;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                    &.icon{
+                       width: 40px;
+                       height: 40px; 
+                       filter: invert(1);
+                    }
+    
+                }
+                & .bottomMenu{
+                    background: radial-gradient(61.87% 89.24% at 50% 50%,$theme1 0,$theme2 100%);
+                    
+                    transition: all 0.3s ease-in-out;
+                    visibility: hidden;
+                   
+                    & .innerUlSection{
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 3px;
+                            height: 100%;
+                            // background: #ff6d00;
+                            background: $theme3;
+    
+                        }
+                        & .bottomMenu2{
+                            left: 10px !important;
+                            position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 3px;
+                            height: 100%;
+                            // background: #ff6d00;
+                            background: $theme3;
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                                font-size: 14px;
+                                color: $white !important;
+                                opacity: 0.7;
+                                transition:  all 0.3s ease-in-out;
+                                position: relative;
+                                padding-left:20px ;
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    left: 25;
+                                    bottom: 0;
+                                    background-color: $white;
+                                    height: 1px;
+                                    width: 0;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 12px;
+                                    height: 1px;
+                                    opacity: 1;
+                                    background-color: $white;
+                                }
+                                &:hover{
+                                    opacity: 1;
+                                    &::before{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                    font-size: 18px;
+                    color: $white;
+    
+                }
+                & .liHeading{
+                    font-size: 14px;
+                    color: $white;
+                }
+            }
+        }
+     }
+}
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .navbar{
+     
+        & .logo{
+        
+        }
+        & .navbarNav{
+            & .navItem{
+              
+                &:hover{
+                    & .bottomMenu{
+                 
+                    
+                    }
+                }
+                
+                & .navLink{
+           
+                    &::after{
+                  
+                    }
+                    &:hover{
+                        &::after{
+                          
+                        }
+                    }
+                    &.icon{
+                      
+                    }
+    
+                }
+                & .bottomMenu{
+            
+                   
+                    & .innerUlSection{
+                    
+                        &::after{
+            
+    
+                        }
+                        & .bottomMenu2{
+                           
+                        &::after{
+                  
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                  
+                                &::before{
+                         
+                                }
+                                &::after{
+                   
+                                }
+                                &:hover{
+                                
+                                    &::before{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                
+    
+                }
+                & .liHeading{
+           
+                }
+            }
+        }
+     
+         &.fixed-navbar{
+       
+            & .navbarNav{
+                & .navItem{
+                   
+                    &:hover{
+                        & .bottomMenu{
+        
+                        }
+                    }
+                    
+                    & .navLink{
+          
+                        &::after{
+
+                        }
+                        &:hover{
+                            &::after{
+                             
+                            }
+                        }
+                        &.icon{
+               
+                        }
+        
+                    }
+                    & .bottomMenu{
+        
+                       
+                        & .innerUlSection{
+                        
+                            &::after{
+            
+        
+                            }
+                            & .bottomMenu2{
+              
+                            &::after{
+      
+                            }
+                            }
+                            & li{
+                    
+                                & .bottomList{
+                  
+                                    &::before{
+                  
+                                    }
+                                    &::after{
+     
+                                    }
+                                    &:hover{
+                                     
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .ulTitle{
+                
+        
+                    }
+                    & .liHeading{
+                
+                    }
+                }
+            }
+         }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .navbar{
+     
+        & .logo{
+        
+        }
+        & .navbarNav{
+            & .navItem{
+              
+                &:hover{
+                    & .bottomMenu{
+                 
+                    
+                    }
+                }
+                
+                & .navLink{
+           
+                    &::after{
+                  
+                    }
+                    &:hover{
+                        &::after{
+                          
+                        }
+                    }
+                    &.icon{
+                      
+                    }
+    
+                }
+                & .bottomMenu{
+            
+                   
+                    & .innerUlSection{
+                    
+                        &::after{
+            
+    
+                        }
+                        & .bottomMenu2{
+                           
+                        &::after{
+                  
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                  
+                                &::before{
+                         
+                                }
+                                &::after{
+                   
+                                }
+                                &:hover{
+                                
+                                    &::before{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                
+    
+                }
+                & .liHeading{
+           
+                }
+            }
+        }
+     
+         &.fixed-navbar{
+       
+            & .navbarNav{
+                & .navItem{
+                   
+                    &:hover{
+                        & .bottomMenu{
+        
+                        }
+                    }
+                    
+                    & .navLink{
+          
+                        &::after{
+
+                        }
+                        &:hover{
+                            &::after{
+                             
+                            }
+                        }
+                        &.icon{
+               
+                        }
+        
+                    }
+                    & .bottomMenu{
+        
+                       
+                        & .innerUlSection{
+                        
+                            &::after{
+            
+        
+                            }
+                            & .bottomMenu2{
+              
+                            &::after{
+      
+                            }
+                            }
+                            & li{
+                    
+                                & .bottomList{
+                  
+                                    &::before{
+                  
+                                    }
+                                    &::after{
+     
+                                    }
+                                    &:hover{
+                                     
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .ulTitle{
+                
+        
+                    }
+                    & .liHeading{
+                
+                    }
+                }
+            }
+         }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar{
+     
+        & .logo{
+        
+        }
+   
+        
+        & .navbarNav{
+            display: none;
+            & .navItem{
+              
+                &:hover{
+                    & .bottomMenu{
+                 
+                    
+                    }
+                }
+                
+                & .navLink{
+                    padding: 5px 0;
+           
+                    &::after{
+                  
+                    }
+                    &:hover{
+                        &::after{
+                          
+                        }
+                    }
+                    &.icon{
+                      
+                    }
+    
+                }
+                & .bottomMenu{
+            
+                   
+                    & .innerUlSection{
+                    
+                        &::after{
+            
+    
+                        }
+                        & .bottomMenu2{
+                           
+                        &::after{
+                  
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                  
+                                &::before{
+                         
+                                }
+                                &::after{
+                   
+                                }
+                                &:hover{
+                                
+                                    &::before{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                
+    
+                }
+                & .liHeading{
+           
+                }
+            }
+        }
+     
+         &.fixed-navbar{
+       
+            & .navbarNav{
+                & .navItem{
+                   
+                    &:hover{
+                        & .bottomMenu{
+        
+                        }
+                    }
+                    
+                    & .navLink{
+          
+                        &::after{
+
+                        }
+                        &:hover{
+                            &::after{
+                             
+                            }
+                        }
+                        &.icon{
+               
+                        }
+        
+                    }
+                    & .bottomMenu{
+        
+                       
+                        & .innerUlSection{
+                        
+                            &::after{
+            
+        
+                            }
+                            & .bottomMenu2{
+              
+                            &::after{
+      
+                            }
+                            }
+                            & li{
+                    
+                                & .bottomList{
+                  
+                                    &::before{
+                  
+                                    }
+                                    &::after{
+     
+                                    }
+                                    &:hover{
+                                     
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .ulTitle{
+                
+        
+                    }
+                    & .liHeading{
+                
+                    }
+                }
+            }
+            & .navOffcanvas{
+               background: radial-gradient(61.87% 89.24% at 50% 50%,$theme1 0,$theme2 100%);
+              
+           }
+         }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar{
+     height: 70px;
+        & .logo{
+            height: 50px;
+            width: 148px;
+        }
+        & .navbarNav{
+            & .navItem{
+              
+                &:hover{
+                    & .bottomMenu{
+                 
+                    
+                    }
+                }
+                
+                & .navLink{
+                    font-size: 14px;
+                    &::after{
+                  
+                    }
+                    &:hover{
+                        &::after{
+                          
+                        }
+                    }
+                    &.icon{
+                        width: 30px;
+                        height: 30px;
+                    }
+    
+                }
+                & .bottomMenu{
+            
+                   
+                    & .innerUlSection{
+                    
+                        &::after{
+            
+    
+                        }
+                        & .bottomMenu2{
+                           
+                        &::after{
+                  
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                  
+                                &::before{
+                         
+                                }
+                                &::after{
+                   
+                                }
+                                &:hover{
+                                
+                                    &::before{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                
+    
+                }
+                & .liHeading{
+           
+                }
+            }
+        }
+     
+         &.fixed-navbar{
+       
+            & .navbarNav{
+                & .navItem{
+                   
+                    &:hover{
+                        & .bottomMenu{
+        
+                        }
+                    }
+                    
+                    & .navLink{
+          
+                        &::after{
+
+                        }
+                        &:hover{
+                            &::after{
+                             
+                            }
+                        }
+                        &.icon{
+               
+                        }
+        
+                    }
+                    & .bottomMenu{
+        
+                       
+                        & .innerUlSection{
+                        
+                            &::after{
+            
+        
+                            }
+                            & .bottomMenu2{
+              
+                            &::after{
+      
+                            }
+                            }
+                            & li{
+                    
+                                & .bottomList{
+                  
+                                    &::before{
+                  
+                                    }
+                                    &::after{
+     
+                                    }
+                                    &:hover{
+                                     
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .ulTitle{
+                
+        
+                    }
+                    & .liHeading{
+                
+                    }
+                }
+            }
+         }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar{
+        height:60px;
+        & .logo{
+        
+        }
+        & .navbarNav{
+            & .navItem{
+              
+                &:hover{
+                    & .bottomMenu{
+                 
+                    
+                    }
+                }
+                
+                & .navLink{
+           
+                    &::after{
+                  
+                    }
+                    &:hover{
+                        &::after{
+                          
+                        }
+                    }
+                    &.icon{
+                      
+                    }
+    
+                }
+                & .bottomMenu{
+            
+                   
+                    & .innerUlSection{
+                    
+                        &::after{
+            
+    
+                        }
+                        & .bottomMenu2{
+                           
+                        &::after{
+                  
+                        }
+                        }
+                        & li{
+                
+                            & .bottomList{
+                  
+                                &::before{
+                         
+                                }
+                                &::after{
+                   
+                                }
+                                &:hover{
+                                
+                                    &::before{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .ulTitle{
+                
+    
+                }
+                & .liHeading{
+           
+                }
+            }
+        }
+     
+         &.fixed-navbar{
+       
+            & .navbarNav{
+                & .navItem{
+                   
+                    &:hover{
+                        & .bottomMenu{
+        
+                        }
+                    }
+                    
+                    & .navLink{
+          
+                        &::after{
+
+                        }
+                        &:hover{
+                            &::after{
+                             
+                            }
+                        }
+                        &.icon{
+               
+                        }
+        
+                    }
+                    & .bottomMenu{
+        
+                       
+                        & .innerUlSection{
+                        
+                            &::after{
+            
+        
+                            }
+                            & .bottomMenu2{
+              
+                            &::after{
+      
+                            }
+                            }
+                            & li{
+                    
+                                & .bottomList{
+                  
+                                    &::before{
+                  
+                                    }
+                                    &::after{
+     
+                                    }
+                                    &:hover{
+                                     
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .ulTitle{
+                
+        
+                    }
+                    & .liHeading{
+                
+                    }
+                }
+            }
+         }
+    }
+}
+
+
+.mobileHeader{
+    & .offcanvasHeader{
+        & .logo{
+            width: 150px;
+            height: 40px;
+        }
+    }
+    & .offcanvasBody{
+        & .icon{
+            width: 25px;
+            height: 25px;
+        }
+        & .navLink{
+            font-size: 14px;
+            color: $white;
+        }
+        & .mobileAccordion{
+            & .accordionItem{
+                & .accordionHeader{
+                    & .accordionButton{
+                        font-size: 14px;
+                        color: $white;
+                        &::after{
+                            // filter: invert(1);
+                        }
+                    }
+                }
+                & .mobileCollapse{
+                    & .accordionBody{
+                        & .innerUlSection{
+                            & .bottomList{
+                                font-size: 12px;
+                                color: $white;
+                                padding-left:10px ;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    height: 100%;
+                                    width: 2px;
+                                    background: $theme3;
+                                    left: 0;
+                                    top: 0;
+                                }
+                            }
+                            & .liHeading{
+                                font-size: 12px;
+                                color: $white;
+                            }
+                        }
+                        & .ulTitle{
+                            font-size: 14px;
+                            color: $white;
+                            
+                        }
+                    }
+                }
             }
         }
     }
