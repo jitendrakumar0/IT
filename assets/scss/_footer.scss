@@ -1,0 +1,343 @@
+
+.footerSection{
+    background: #040819;
+    // padding: 70px 0 0;
+    margin-top: 140px;
+
+    & .footer-address-area{
+        margin-top: -70px;
+        margin-bottom: 70px;
+        & .location-box{
+            padding: 15px;
+            min-height: 198px;
+            color: #fff;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            background: #67449e;
+            &::before{
+                background: url(../../assets/img/footer/dot.png) repeat;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: "";
+            }
+            &:after{
+            position: absolute;
+            width: 85px;
+            height: 85px;
+            background: rgba(255,255,255,.1);
+            right: -20px;
+            bottom: -20px;
+            content: "";
+            border-radius: 100%;
+            }
+            & .addressHeaing{
+                font-size: 24px;
+                color: $white;
+                position: relative;
+                padding-bottom: 25px;
+                font-weight: 700;
+                //  margin-bottom: 0.2rem;
+                &::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: 15px;
+                    width: 50px;
+                    height: 1px;
+                    background: #fff;
+                    content: "";
+                }
+            }
+            & .subHeading{
+                font-size: 18px;
+                 margin-bottom: 0.2rem;
+                color: $white;
+                font-weight: 500;
+            }
+            & .cardPera{
+                font-size: 13px;
+            }
+
+
+        }
+
+    }
+    & .footerLogo{
+        height: 55px;
+        width: 190px;
+    }
+    & .footer_Pera {
+        font-size: 16px;
+    }
+    & .footer-title{
+        color: $white;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    & .footerLink{
+        font-size: 16px;
+        color: $white;
+        // opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+         
+            color: $theme4;
+        }
+    }
+    & .socialMenu{
+        & .socialIcon{
+            width: 25px;
+            height: 25px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    & .footerInnerSection{
+        border-top: 1px solid #222325;
+        border-bottom: 1px solid #222325;
+
+    }
+    & .ratingIcon{
+        width: 20px;
+        height: 20px;
+    }
+    & .webHeading{
+        font-size: 14px;
+        color: $white;
+        font-weight: 400;
+        opacity: 1 !important;
+    }
+    & .peraFooter{
+        font-size: 12px;
+        color: $white;
+        font-weight: 300;
+        opacity: 0.7;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .footerSection{
+        margin-top: 70px;
+    
+        & .footer-address-area{
+  
+            & .location-box{
+        
+                &::before{
+
+                }
+                &:after{
+
+                }
+                & .addressHeaing{
+         
+                    &::after{
+
+                    }
+                }
+                & .subHeading{
+      
+                }
+                & .cardPera{
+                }
+    
+    
+            }
+    
+        }
+        & .footerLogo{
+       
+        }
+        & .footer_Pera {
+            padding-bottom: 10px;
+          
+        }
+        & .footer-title{
+     
+        }
+        & .footerLink{
+  
+            &:hover{
+        
+            }
+        }
+        & .socialMenu{
+            & .socialIcon{
+         
+                &:hover{
+              
+                }
+            }
+        }
+        & .footerInnerSection{
+   
+    
+        }
+        & .ratingIcon{
+           
+        }
+        & .webHeading{
+    
+        }
+        & .peraFooter{
+  
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .footerSection{
+
+    
+        & .footer-address-area{
+  
+            & .location-box{
+        
+                &::before{
+
+                }
+                &:after{
+
+                }
+                & .addressHeaing{
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    &::after{
+
+                    }
+                }
+                & .subHeading{
+      
+                }
+                & .cardPera{
+                    font-size: 13px;
+                }
+    
+    
+            }
+    
+        }
+        & .footerLogo{
+       
+        }
+        & .footer_Pera {
+            font-size: 14px;
+        }
+        & .footer-title{
+     
+        }
+        & .footerLink{
+            font-size: 14px;
+            &:hover{
+        
+            }
+        }
+        & .socialMenu{
+            & .socialIcon{
+         
+                &:hover{
+              
+                }
+            }
+        }
+        & .footerInnerSection{
+   
+    
+        }
+        & .ratingIcon{
+           
+        }
+        & .webHeading{
+    
+        }
+        & .peraFooter{
+  
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footerSection{
+
+    
+        & .footer-address-area{
+  
+            & .location-box{
+        
+                &::before{
+
+                }
+                &:after{
+
+                }
+                & .addressHeaing{
+         
+                    &::after{
+
+                    }
+                }
+                & .subHeading{
+      
+                }
+                & .cardPera{
+                  
+                }
+    
+    
+            }
+    
+        }
+        & .footerLogo{
+       
+        }
+        & .footer_Pera {
+            font-size: 13px;
+        }
+        & .footer-title{
+             font-size: 18px;
+        }
+        & .footerLink{
+            font-size: 13px;
+            &:hover{
+        
+            }
+        }
+        & .socialMenu{
+            & .socialIcon{
+         
+                &:hover{
+              
+                }
+            }
+        }
+        & .footerInnerSection{
+   
+    
+        }
+        & .ratingIcon{
+           
+        }
+        & .webHeading{
+    
+        }
+        & .peraFooter{
+  
+        }
+    }
+}
+
+
+.copyRight{
+    background: #040819;
+
+    color: #fff;
+    font-size: 12px;
+}

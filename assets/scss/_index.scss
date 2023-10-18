@@ -3,14 +3,32 @@
 .heroSection{
     // height: calc(100vh - 90px);
     height: 100vh;
-    &:after{
-        position: absolute;
+    background-image: url(../img/index/herosection.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    // &:after{
+    //     position: absolute;
+    //     content: "";
+    //     bottom: 0;
+    //     left: 0;
+    //     height: 200px;
+    //     width: 100%;
+    //     background: linear-gradient(180deg, #ffffff00 0%, #181c24 48.71%);
+    // }
+    &::before{
+        // background: radial-gradient(90.87% 90.24% at 50% 50%,$theme1 0, $theme2 100%);
+        background: radial-gradient(90.87% 90.24% at 50% 50%, #7792be 0, #022770 100%);
         content: "";
-        bottom: 0;
+        top: 0;
         left: 0;
-        height: 200px;
+        height: 100%;
         width: 100%;
-        background: linear-gradient(180deg, #ffffff00 0%, #181c24 48.71%);
+        mix-blend-mode: multiply;
+        pointer-events: none;
+        position: absolute;
+        z-index: 1;
     }
   
     & .videoOverLay{
@@ -35,7 +53,7 @@
             // display: flex;
             // flex-direction: column;
             & .heroTitle{
-                font-size: 42px;
+                font-size: 48px;
                 line-height: 50px;
                 color: $white;
                 z-index: 1;
@@ -336,6 +354,7 @@
                     line-height: 30px;
                 }
                 & .heroPera{
+                    font-size: 13px;
                 }
                 
             }
@@ -643,6 +662,3464 @@
                 }
             }
             
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .itConsulting{
+        & .sideNav{
+           
+            & .navPills{
+                & .navItem{
+                    & .navLink{
+              
+                        &:hover{
+                           
+                        }
+                        &.active{
+                    
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            & .tabPane{
+                & .sectionHeading{
+             
+    
+                    &::before{
+           
+                    }
+                }
+                & .pera{
+             
+                }
+                & .outterCard{
+                    & .linkDev{
+           
+                    }
+                    & .iconDots{
+                
+                    }
+                }
+                & .coreTitle{
+               
+                }
+                & .corePera{
+    
+                    &:hover{
+                        & .coreIcon{
+                        
+    
+                        }
+                    }
+                    & .coreIcon{
+                 
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .itConsulting{
+        & .sideNav{
+           
+            & .navPills{
+                & .navItem{
+                    & .navLink{
+                        padding: 16px 0 16px 20px;
+                        &:hover{
+                           
+                        }
+                        &.active{
+                    
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            & .tabPane{
+                & .sectionHeading{
+             
+    
+                    &::before{
+           
+                    }
+                }
+                & .pera{
+             
+                }
+                & .outterCard{
+                    & .linkDev{
+                        font-size:14px;
+                    }
+                    & .iconDots{
+                
+                    }
+                }
+                & .coreTitle{
+               
+                }
+                & .corePera{
+    
+                    &:hover{
+                        & .coreIcon{
+                        
+    
+                        }
+                    }
+                    & .coreIcon{
+                 
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .itConsulting{
+        & .sideNav{
+            padding: 0 !important;
+            border-radius: 10px;
+            border: 1px solid $theme1;
+           
+            & .navPills{
+                flex-direction: row !important;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                overflow-x: auto;
+                border-radius: 10px ;
+                border: 1px solid $theme1;
+                & .navItem{
+                    & .navLink{
+                        display: flex;
+                        width: auto !important;
+                        padding: 10px 15px !important;
+                        font-size: 16px;
+                        
+                        &:hover{
+                        }
+                        &.active{
+                            transform: scale(1);
+                            border-radius: 10px !important;
+                            border: 1px solid $theme3;
+                    
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            & .tabPane{
+                & .sectionHeading{
+                    font-size: 24px;
+                    &::before{
+           
+                    }
+                }
+                & .pera{
+             
+                }
+                & .outterCard{
+                    & .linkDev{
+           
+                    }
+                    & .iconDots{
+                
+                    }
+                }
+                & .coreTitle{
+               
+                }
+                & .corePera{
+    
+                    &:hover{
+                        & .coreIcon{
+                        
+    
+                        }
+                    }
+                    & .coreIcon{
+                 
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .itConsulting{
+        & .sideNav{
+           
+            & .navPills{
+                & .navItem{
+                    & .navLink{
+                        font-size: 14px;
+                        &:hover{
+                           
+                        }
+                        &.active{
+                    
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            & .tabPane{
+                & .sectionHeading{
+                    font-size: 18px;
+    
+                    &::before{
+           
+                    }
+                }
+                & .pera{
+                    font-size: 14px;
+                }
+                & .outterCard{
+                    & .linkDev{
+           
+                    }
+                    & .iconDots{
+                
+                    }
+                }
+                & .coreTitle{
+                    font-size: 16px;
+                }
+                & .corePera{
+                    font-size: 12px;
+                    &:hover{
+                        & .coreIcon{
+                        
+    
+                        }
+                    }
+                    & .coreIcon{
+                 
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .itConsulting{
+        & .sideNav{
+           
+            & .navPills{
+                & .navItem{
+                    & .navLink{
+              
+                        &:hover{
+                           
+                        }
+                        &.active{
+                    
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            & .tabPane{
+                & .sectionHeading{
+             
+    
+                    &::before{
+           
+                    }
+                }
+                & .pera{
+                    font-size: 13px;
+
+                }
+                & .outterCard{
+                    & .linkDev{
+                        font-size: 12px;
+                    }
+                    & .iconDots{
+                
+                    }
+                }
+                & .coreTitle{
+               
+                }
+                & .corePera{
+    
+                    &:hover{
+                        & .coreIcon{
+                        
+    
+                        }
+                    }
+                    & .coreIcon{
+                        height: 40px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+// awared section start 
+
+.awaredSection{
+    background-image: url(../img/index/awared-bg.png.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    & .awardImg{
+        // max-height: 340px;
+        // height: 100%;
+    }
+    & .sectionheading{
+        font-size: 42px;
+        line-height: 50px;
+        color: $white;
+    }
+    & .cluthCard{
+        & .CardImg{
+            height: 25px;
+           
+        }
+        & .pera{
+            font-size: 14px;
+            font-weight: 300;
+            color: $black;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    & .awaredOwl{
+        & .awaredLink{
+            font-size: 14px;
+            color: $black;
+            font-weight: 400;
+            transition: all 0.5s ease-in-out;
+            overflow: hidden;
+            &:hover{
+                & .imgAwred{
+                    transform: scale(0.9);
+                }
+            }
+            & .imgAwred{
+                height: 100px;
+                transition: all 0.5s ease-in-out;
+                overflow: hidden;
+
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .awaredSection{
+
+        & .awardImg{
+      
+        }
+        & .sectionheading{
+    
+        }
+        & .cluthCard{
+            & .CardImg{
+              
+               
+            }
+            & .pera{
+      
+            }
+        }
+        & .awaredOwl{
+            & .awaredLink{
+        
+                &:hover{
+                    & .imgAwred{
+                     
+                    }
+                }
+                & .imgAwred{
+            
+    
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .awaredSection{
+
+        & .awardImg{
+      
+        }
+        & .sectionheading{
+            font-size: 34px;
+            line-height: 40px;
+        }
+        & .cluthCard{
+            & .CardImg{
+              
+               
+            }
+            & .pera{
+      
+            }
+        }
+        & .awaredOwl{
+            & .awaredLink{
+        
+                &:hover{
+                    & .imgAwred{
+                     
+                    }
+                }
+                & .imgAwred{
+            
+    
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .awaredSection{
+
+        & .awardImg{
+            aspect-ratio: 5/3;
+            & img{
+                object-fit: contain;
+            }
+        }
+        & .sectionheading{
+    
+        }
+        & .cluthCard{
+            & .CardImg{
+              
+               
+            }
+            & .pera{
+      
+            }
+        }
+        & .awaredOwl{
+            & .awaredLink{
+        
+                &:hover{
+                    & .imgAwred{
+                     
+                    }
+                }
+                & .imgAwred{
+            
+    
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .awaredSection{
+
+        & .awardImg{
+        display: none;
+        }
+        & .sectionheading{
+            font-size: 26px;
+            line-height: 33px;
+        }
+        & .cluthCard{
+            & .CardImg{
+             height: 20px;
+            }
+            & .pera{
+                font-size: 13px;
+            }
+        }
+        & .awaredOwl{
+            & .awaredLink{
+               
+                &:hover{
+                    & .imgAwred{
+                     
+                    }
+                }
+                & .imgAwred{
+                 
+    
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .awaredSection{
+
+        & .awardImg{
+      
+        }
+        & .sectionheading{
+            font-size: 20px;
+            line-height: 27px;
+        }
+        & .cluthCard{
+            & .CardImg{
+              
+               
+            }
+            & .pera{
+      
+            }
+        }
+        & .awaredOwl{
+            & .awaredLink{
+        font-size: 12px;
+                &:hover{
+                    & .imgAwred{
+                     
+                    }
+                }
+                & .imgAwred{
+                    height: 60px;
+    
+                }
+            }
+        }
+    }
+}
+
+
+
+/*about */
+
+.about_home{
+    & .our_story-heading {
+        font-size: 200px;
+        line-height: 200px;
+        font-weight:  bold;
+        text-transform:  uppercase;
+        position:  absolute;
+        top: 100px;
+        left: 100px;
+        max-width:  619px;
+        opacity: 0.09;
+        z-index: -1;
+    }
+    & .happy-box{
+        & .happyUl{
+            margin: 0px -5px;
+            & .box{
+                padding:15px;
+                border:  1px solid #ebebeb;
+                box-shadow: 0 0 30px 0 rgba(0,0,0,.45);
+                height: 150px;
+              
+                & .person{
+                    font-size: 30px;
+                    font-weight: 900;
+                    color: $black;
+                }
+                & .pera{
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: 300;
+                    color: $black;
+                }
+                &.Happy{
+                    background-color: $primary;
+                    border-color:$primary ;
+                    & .person{
+                    color: $white;
+                    }
+                    & .pera{
+                        color: $white;
+                    }
+
+                }
+                &.Business{
+                    background-color: $theme4;
+                    border-color:$theme4 ;
+                    & .person{
+                    color: $white;
+                    }
+                    & .pera{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    & .subHeading{
+        font-size: 16px;
+        color: $black;
+        opacity: 0.8;
+    }
+    & .mainHeading{
+        font-size: 40px;
+        line-height: 47px;
+        color: $black;
+        font-weight: 900;
+    }
+    & .aboutPera{
+        font-size: 14px;
+        color: $black;
+        font-weight: 300;
+    }
+
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .about_home{
+        & .our_story-heading {
+
+        }
+        & .happy-box{
+            & .happyUl{
+       
+                & .box{
+     
+                  
+                    & .person{
+
+                    }
+                    & .pera{
+
+                    }
+                    &.Happy{
+        
+                        & .person{
+            
+                        }
+                        & .pera{
+                      
+                        }
+    
+                    }
+                    &.Business{
+                      
+                        & .person{
+                       
+                        }
+                        & .pera{
+                       
+                        }
+                    }
+                }
+            }
+        }
+        & .subHeading{
+      
+        }
+        & .mainHeading{
+           
+    
+        }
+        & .aboutPera{
+        
+        }
+        & .getLinkBtn{
+    
+            &:hover{
+                & .rightIcon{
+                 
+                }
+            }
+            & .rightIcon{
+           
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .about_home{
+        & .our_story-heading {
+
+        }
+        & .happy-box{
+            & .happyUl{
+       
+                & .box{
+     
+                  
+                    & .person{
+
+                    }
+                    & .pera{
+
+                    }
+                    &.Happy{
+        
+                        & .person{
+            
+                        }
+                        & .pera{
+                      
+                        }
+    
+                    }
+                    &.Business{
+                      
+                        & .person{
+                       
+                        }
+                        & .pera{
+                       
+                        }
+                    }
+                }
+            }
+        }
+        & .subHeading{
+      
+        }
+        & .mainHeading{
+            font-size: 33px;
+            line-height: 39px;
+    
+        }
+        & .aboutPera{
+        
+        }
+        & .getLinkBtn{
+    
+            &:hover{
+                & .rightIcon{
+                 
+                }
+            }
+            & .rightIcon{
+           
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .about_home{
+        & .our_story-heading {
+
+        }
+        & .happy-box{
+            & .happyUl{
+       
+                & .box{
+     
+                  
+                    & .person{
+
+                    }
+                    & .pera{
+
+                    }
+                    &.Happy{
+        
+                        & .person{
+            
+                        }
+                        & .pera{
+                      
+                        }
+    
+                    }
+                    &.Business{
+                      
+                        & .person{
+                       
+                        }
+                        & .pera{
+                       
+                        }
+                    }
+                }
+            }
+        }
+        & .subHeading{
+      
+        }
+        & .mainHeading{
+           
+    
+        }
+        & .aboutPera{
+        
+        }
+        & .getLinkBtn{
+    
+            &:hover{
+                & .rightIcon{
+                 
+                }
+            }
+            & .rightIcon{
+           
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .about_home{
+        & .our_story-heading {
+            font-size: 150px;
+            line-height: 150px;
+        }
+        & .happy-box{
+            & .happyUl{
+       
+                & .box{
+                    height: 124px;
+                  
+                    & .person{
+
+                    }
+                    & .pera{
+
+                    }
+                    &.Happy{
+        
+                        & .person{
+            
+                        }
+                        & .pera{
+                      
+                        }
+    
+                    }
+                    &.Business{
+                      
+                        & .person{
+                       
+                        }
+                        & .pera{
+                       
+                        }
+                    }
+                }
+            }
+        }
+        & .subHeading{
+      
+        }
+        & .mainHeading{
+            font-size: 27px;
+            line-height: 35px;
+    
+        }
+        & .aboutPera{
+        
+        }
+        & .getLinkBtn{
+    
+            &:hover{
+                & .rightIcon{
+                 
+                }
+            }
+            & .rightIcon{
+           
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about_home{
+        & .our_story-heading {
+            font-size: 100px;
+            line-height: 100px;
+        }
+        & .happy-box{
+            & .happyUl{
+       
+                & .box{
+                    & .person{
+                        font-size: 22px;
+                      
+
+                    }
+                    & .pera{
+
+                    }
+                    &.Happy{
+                        font-size: 22px;
+        
+                        & .person{
+            
+                        }
+                        & .pera{
+                      
+                        }
+    
+                    }
+                    &.Business{
+                    font-size: 22px;
+                      
+                        & .person{
+                       
+                        }
+                        & .pera{
+                       
+                        }
+                    }
+                }
+            }
+        }
+        & .subHeading{
+            font-size: 14px;
+        }
+        & .mainHeading{
+            font-size: 20px;
+            line-height: 29px;
+        }
+        & .aboutPera{
+        
+        }
+        & .getLinkBtn{
+    
+            &:hover{
+                & .rightIcon{
+                 
+                }
+            }
+            & .rightIcon{
+           
+            }
+        }
+    }
+}
+
+// process section start 
+
+
+// .Process{
+//     position: relative;
+  
+//     &::before{
+//         position: absolute;
+//         content: '';
+//         background-image: url(../img/index/dot-big-square.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         left: 132px;
+//         top: 100px;
+//         height: 200px;
+//         width: 200px;
+//     }
+
+//     & .sectionHeading{
+//         font-size: 42px;
+//         line-height: 50px;
+//         font-weight: 800;
+//         color: $black;
+//     }
+//     & .pera{
+//         font-size: 16px;
+//         color: $black;
+//     }
+//     & .progress-images-group{
+//         transition: all 0.4s ease-in-out;
+//         height: 300px;
+//         position:  relative;
+//         width:  100%;
+//         & .title_pro{
+//             font-weight: 400;
+//             color: $theme3;
+//             position: absolute;
+//             top: 74px;
+//             font-size: 16px;
+//             width: 100%;
+//             text-align: center;
+//         }
+//         & .group-01{
+//             z-index:  1;
+//             top: 111px;
+//         }
+//         & .group-02 {
+//             bottom: 61px;
+//             height: 38px;
+//             overflow: hidden;
+//             z-index: 0;
+//         }
+//         & .group-03{
+//             z-index: -1;
+//             top: 206px;
+
+//         }
+//         &:hover{
+//             & .group-02{
+//                 // top: 50px;
+//             }
+//             & .group-03{
+//                 bottom: 61px;
+//                 height: 116px;
+//                 overflow: hidden;
+//             }
+//             & .title_pro{
+//                 top: 0;
+//             }
+//         }
+//     }
+//    & .progress-images-group:hover .group-01{ top: 50px;  }
+//     & .progress-images-group:hover .group-02 {
+//         bottom: 61px;
+//         height: 116px;
+//         overflow: hidden;
+//     }
+//     & .progress-images-group [class*="group-"] {
+//         position:  absolute;
+//         /* top: 0; */
+//         right:  0;
+//         left:  0;
+//     }
+//     .progress-images-group,.progress-images-group *,.col-solutions_carousel  ,.col-solutions_carousel  *{ -webkit-transition: all 0.4s ease-in-out;
+//         -moz-transition: all 0.4s ease-in-out;
+//         -o-transition: all 0.4s ease-in-out;
+//         transition: all 0.4s ease-in-out;  }
+// }
+
+
+.Process{
+    background-image: url(../img/index/dot-dot-wave-shape.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    & .sectionHeading{
+                font-size: 42px;
+                line-height: 50px;
+                font-weight: 800;
+                color: $black;
+            }
+            & .pera{
+                font-size: 16px;
+                color: $black;
+            }
+
+
+    & .play-img{
+        aspect-ratio: 6/5;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url(../img/index/processIMg1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            left: 0;
+            bottom: -20px;
+            z-index: -1;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../img/index/processimg2.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            right: 0;
+            top: -20px;
+            z-index: -1;
+        }
+        & img{
+            object-fit: contain;
+        }
+    }
+    & .how-to-play-circle{
+        min-height: 420px;
+        margin: 50px 0px;
+        &::before{
+            content: "";
+            background: url(../img/index/processImg.svg);
+            background-size: auto 100%;
+            width: 120px;
+            height: 513px;
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            z-index: -22222;
+        }
+        & ul{
+            & li{
+            min-height: 120px;
+            &:nth-child(1){
+                margin-left: -13px;
+            }
+            &:nth-child(2){
+            margin-left: 55px;
+            }
+            &:nth-child(3){
+                margin-left: 75px;
+
+            }
+            &:nth-child(4){
+                margin-left: 55px;
+            }
+            &:nth-child(5){
+                margin-left: -8px;
+                min-height: auto;
+            }
+            & .media-left{
+                & .media-icons{
+                    border: $theme4 1px solid;
+                    width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 52px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    transition: all 0.3s ease-in-out;
+                    padding: 10px;
+                    // &::after{
+                    //     content: "";
+                    //     position: absolute;
+                    //     width: 85px;
+                    //     height: 85px;
+                    //     background-image: url(../img/index/circle.svg);
+                    //     background-repeat: no-repeat;
+                    //     background-position: center;
+                    //     background-size: cover;
+                    //     z-index: 3;
+                    //     animation: rotate 15s linear infinite;
+                    // }
+                    @keyframes rotate {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+            
+                        25% {
+                            transform: rotate(90deg);
+                        }
+            
+                        50% {
+                            transform: rotate(180deg);
+                        }
+            
+                        75% {
+                            transform: rotate(270deg);
+                        }
+            
+                        100% {
+                            transform: rotate(360deg);
+                        }
+            
+                    }
+                }
+            }
+            & .media-right{
+                & .media-title{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: start;
+                }
+                & .media-pera{
+                    font-size: 14px;
+                    color: $black;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    
+.Process{
+
+    & .play-img{
+
+        &::before{
+
+        }
+        &::after{
+
+        }
+        & img{
+          
+        }
+    }
+    & .how-to-play-circle{
+
+        &::before{
+
+        }
+        & ul{
+            & li{
+         
+            &:nth-child(1){
+                
+            }
+            &:nth-child(2){
+          
+            }
+            &:nth-child(3){
+             
+
+            }
+            &:nth-child(4){
+              
+            }
+            &:nth-child(5){
+           
+            }
+            & .media-left{
+                & .media-icons{
+    
+                }
+            }
+            & .media-right{
+                & .media-title{
+                
+                }
+                & .media-pera{
+                 
+                }
+            }
+            }
+        }
+    }
+}
+
+}
+
+@include media-breakpoint-down(xl) {
+    .Process{
+        & .sectionHeading{
+            font-size: 35px;
+            line-height: 44px;
+        }
+        & .pera{
+      
+        }
+        & .play-img{
+    
+            &::before{
+    
+            }
+            &::after{
+    
+            }
+            & img{
+              
+            }
+        }
+        & .how-to-play-circle{
+            min-height: 372px;
+            margin: 26px 0px;
+            &::before{
+                height: 458px;
+
+            }
+            & ul{
+                & li{
+                    min-height: 104px;
+                &:nth-child(1){
+                    
+                }
+                &:nth-child(2){
+              
+                }
+                &:nth-child(3){
+                 
+    
+                }
+                &:nth-child(4){
+                  
+                }
+                &:nth-child(5){
+               
+                }
+                & .media-left{
+                    & .media-icons{
+        
+                    }
+                }
+                & .media-right{
+                    & .media-title{
+                    
+                    }
+                    & .media-pera{
+                     
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .Process{
+        & .sectionHeading{
+  
+        }
+        & .pera{
+      
+        }
+        & .play-img{
+            aspect-ratio: 8/5;
+
+            &::before{
+    
+            }
+            &::after{
+    
+            }
+            & img{
+              
+            }
+        }
+        & .how-to-play-circle{
+    
+            &::before{
+    
+            }
+            & ul{
+                & li{
+             
+                &:nth-child(1){
+                    
+                }
+                &:nth-child(2){
+              
+                }
+                &:nth-child(3){
+                 
+    
+                }
+                &:nth-child(4){
+                  
+                }
+                &:nth-child(5){
+               
+                }
+                & .media-left{
+                    & .media-icons{
+        
+                    }
+                }
+                & .media-right{
+                    & .media-title{
+                    
+                    }
+                    & .media-pera{
+                     
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .Process{
+        & .sectionHeading{
+            font-size: 28px;
+            line-height: 39px;
+        }
+        & .pera{
+      font-size: 14px;
+      & br{
+        display: none;
+      }
+        }
+        & .play-img{
+    
+            &::before{
+                height: 150px;
+                width: 150px;
+            }
+            &::after{
+                height: 150px;
+                width: 150px;
+            }
+            & img{
+              
+            }
+        }
+        & .how-to-play-circle{
+    
+            &::before{
+                display: none;
+            }
+            & ul{
+                & li{
+                    min-height: 80px;
+                &:nth-child(1){
+                    margin-left: 0;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+              
+                }
+                &:nth-child(3){
+                    margin-left: 0;
+                 
+    
+                }
+                &:nth-child(4){
+                    margin-left: 0;
+                  
+                }
+                &:nth-child(5){
+                    margin-left: 0;
+               
+                }
+                & .media-left{
+                    & .media-icons{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                & .media-right{
+                    & .media-title{
+                        font-size: 16px;
+                    }
+                    & .media-pera{
+                     font-size: 13px;
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .Process{
+        & .sectionHeading{
+  
+        }
+        & .pera{
+      
+        }
+        & .play-img{
+    
+            &::before{
+    
+            }
+            &::after{
+    
+            }
+            & img{
+              
+            }
+        }
+        & .how-to-play-circle{
+    
+            &::before{
+    
+            }
+            & ul{
+                & li{
+             
+                &:nth-child(1){
+                    
+                }
+                &:nth-child(2){
+              
+                }
+                &:nth-child(3){
+                 
+    
+                }
+                &:nth-child(4){
+                  
+                }
+                &:nth-child(5){
+               
+                }
+                & .media-left{
+                    & .media-icons{
+        
+                    }
+                }
+                & .media-right{
+                    & .media-title{
+                    
+                    }
+                    & .media-pera{
+                     
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+
+// process section end 
+
+
+
+
+// ourWork start 
+// .ourWork{
+// background-image: url(../img/index/ourwork.png);
+// // background-repeat: no-repeat;
+// // background-position: center;
+// // background-size: cover;
+// & .sectionHeading{
+//     font-size: 42px;
+//     line-height: 50px;
+//     font-weight: 800;
+//     color: $black;
+// }
+// & .pera{
+//     font-size: 16px;
+//     color: $black;
+// }
+// & .ourWorkCard{
+//     background-image: url(../img/index/vision11_banner1.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     padding: 30px 50px 10px;
+//     text-align: center;
+//     position: relative;
+//     overflow: hidden;
+//     height: 400px;
+//     // height: 100%;
+//     background-color: #e77817;
+//     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 55%);
+//     transition: all 0.3s ease-in-out;
+//     &.ourWorkCard2{
+//         background-image: url(../img/index/zimardi-bg.jpg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         padding: 30px 50px 10px;
+//         text-align: center;
+//         position: relative;
+//         overflow: hidden;
+//         height: 400px;
+//         // height: 100%;
+//         background-color: #e77817;
+//         box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 55%);
+//         transition: all 0.3s ease-in-out;
+//     }
+//     &:hover{
+//         text-align: left;
+//         // width: 800px !important;
+//         // height: 620px;
+        
+//         & .viewDetails{
+//             right: 20px;
+//         }
+//         & .producr-img{
+//             & .mob{
+//                 left: 10px;
+//                 width: 138px;
+//                 z-index: 1;
+//             }
+//               & .des{
+//                  right: -72px;
+//             }
+//         }
+//     }
+//     & .viewDetails{
+//         right: -150px;
+//         top: 20px;
+//         transition: all 0.3s ease-in-out;
+//     }
+//     & .cardHeading{
+//         font-size: 25px;
+//         color: $white;
+//         transition: all 0.3s ease-in-out;
+
+        
+//     }
+//     & .pera{
+//         font-size: 14px;
+//         color: $white;
+//         font-weight: 300;
+//         transition: all 0.3s ease-in-out;
+
+//     }
+//     & .producr-img{
+//         padding-top: 40px;
+//         margin-right: -15px;
+//         transition: all 0.3s ease-in-out;
+
+//         & .mob{
+//             position: absolute;
+//             left: -100%;
+//             bottom: 0;
+//             width: 178px;
+//             padding: 0px;
+//             transition: all 0.3s ease-in-out;
+
+//         }
+//         & .des{
+//             right: 0px;
+//             position: absolute;
+//             transition: all 0.3s ease-in-out;
+
+//         }
+//     }
+
+// }
+
+// }
+
+.ourWorkSection{
+    // background-color: $theme4;
+background-image: url(../img/index/ourwork.png);
+
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../img/index/processIMg2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        bottom: 34px;
+        left: 64px;
+        animation-name: floating;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../img/index/dot-big-square.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 132px;
+        top: 100px;
+        height: 200px;
+        width: 200px;
+   
+    }
+    @keyframes floating{
+        0%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-30px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    & .ourWorkContainer{
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../img/index/image-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        right:80px;
+        top: 100px;
+        height: 200px;
+        width: 150px;
+        animation-name: floating;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    & .workCard{
+        background: #0e420c;
+        border-radius: 8px;
+        position: relative;
+        &.workCard2{
+            background-color: $theme4;
+        }
+       
+        & .subheadingCard{
+            font-size: 14px;
+            color: $white;
+            font-weight: 300;
+        }
+        & .cardHeading{
+            font-size: 20px;
+            font-weight: 600;
+            color: $white;
+        }
+        & .cardImg{
+            width: 80%;
+        }
+
+    }
+    & .swiper {
+        height: 360px;
+    }
+    & .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+    }
+    & .swiperNav{
+        bottom: 34px;
+        left: 89px;
+        gap: 5px;
+        transition: all 0.3s ease-in-out;
+    
+        & .btnswiper{
+            width: 30px;
+            height: 30px;
+            background-color: $theme4;
+            border-radius: 50%;
+            padding: 5px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+             
+                    background-color: $theme3;
+                    & img{
+                        filter: none;
+                    }
+                
+            }
+          
+            & img{
+                filter: invert(1);
+            }
+    
+            &::after{
+                display: none;
+            }
+            & .swiper-button-next{
+            }
+        }
+    }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .ourWorkSection{
+
+        &::after{
+    
+        }
+        &::before{
+
+       
+        }
+ 
+        & .ourWorkContainer{
+        &::before{
+  
+        }
+        & .workCard{
+   
+            &.workCard2{
+           
+            }
+           
+            & .subheadingCard{
+           
+            }
+            & .cardHeading{
+  
+            }
+            & .cardImg{
+           
+            }
+    
+        }
+        & .swiper {
+  
+        }
+        & .swiper-slide {
+
+        }
+        & .swiperNav{
+
+        
+            & .btnswiper{
+
+                &:hover{
+                 
+                        & img{
+                           
+                        }
+                    
+                }
+              
+                & img{
+                  
+                }
+        
+                &::after{
+              
+                }
+                & .swiper-button-next{
+                }
+                
+            }
+        }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .ourWorkSection{
+
+        &::after{
+    
+        }
+        &::before{
+
+       
+        }
+ 
+        & .ourWorkContainer{
+        &::before{
+  
+        }
+        & .workCard{
+   
+            &.workCard2{
+           
+            }
+           
+            & .subheadingCard{
+           
+            }
+            & .cardHeading{
+                font-size: 18px;
+            }
+            & .cardImg{
+           
+            }
+    
+        }
+        & .swiper {
+  
+        }
+        & .swiper-slide {
+
+        }
+        & .swiperNav{
+
+        
+            & .btnswiper{
+
+                &:hover{
+                 
+                        & img{
+                           
+                        }
+                    
+                }
+              
+                & img{
+                  
+                }
+        
+                &::after{
+              
+                }
+                & .swiper-button-next{
+                }
+                
+            }
+        }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .ourWorkSection{
+
+        &::after{
+    
+        }
+        &::before{
+
+       
+        }
+ 
+        & .ourWorkContainer{
+        &::before{
+  
+        }
+        & .workCard{
+   
+            &.workCard2{
+           
+            }
+           
+            & .subheadingCard{
+           
+            }
+            & .cardHeading{
+                font-size: 16px;
+            }
+            & .cardImg{
+           
+            }
+    
+        }
+        & .swiper {
+  
+        }
+        & .swiper-slide {
+
+        }
+        & .swiperNav{
+            bottom: 59px;
+        
+            & .btnswiper{
+
+                &:hover{
+                 
+                        & img{
+                           
+                        }
+                    
+                }
+              
+                & img{
+                  
+                }
+        
+                &::after{
+              
+                }
+                & .swiper-button-next{
+                }
+                
+            }
+        }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .ourWorkSection{
+
+        &::after{
+    
+        }
+        &::before{
+
+       
+        }
+ 
+        & .ourWorkContainer{
+        &::before{
+  
+        }
+        & .workCard{
+   
+            &.workCard2{
+           
+            }
+           
+            & .subheadingCard{
+           
+            }
+            & .cardHeading{
+  
+            }
+            & .cardImg{
+           
+            }
+    
+        }
+        & .swiper {
+            height: 600px;
+        }
+        & .swiper-slide {
+
+        }
+        & .swiperNav{
+            display: none !important;
+        
+            & .btnswiper{
+
+                &:hover{
+                 
+                        & img{
+                           
+                        }
+                    
+                }
+              
+                & img{
+                  
+                }
+        
+                &::after{
+              
+                }
+                & .swiper-button-next{
+                }
+                
+            }
+        }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ourWorkSection{
+
+        &::after{
+    
+        }
+        &::before{
+
+       
+        }
+ 
+        & .ourWorkContainer{
+        &::before{
+  
+        }
+        & .workCard{
+   
+            &.workCard2{
+           
+            }
+           
+            & .subheadingCard{
+           
+            }
+            & .cardHeading{
+                font-size: 14px;
+            }
+            & .cardImg{
+           aspect-ratio: 5/2;
+           width: 100%;
+           margin: auto;
+           text-align: center;
+           
+            }
+    
+        }
+        & .swiper {
+            height: 100%;
+  
+        }
+        & .swiper-slide {
+
+        }
+        & .swiperNav{
+
+        
+            & .btnswiper{
+
+                &:hover{
+                 
+                        & img{
+                           
+                        }
+                    
+                }
+              
+                & img{
+                  
+                }
+        
+                &::after{
+              
+                }
+                & .swiper-button-next{
+                }
+                
+            }
+        }
+        }
+    }
+}
+
+
+// our work section end  
+
+// contactForm section start 
+
+.contactForm{
+    padding: 100px 0px 60px;
+    background-color: #1b1c1e;
+    margin-top: 150px;
+    & .lookingFooter{
+        margin-top: -125px;
+        margin-left: 15px;
+        max-width: 472px;
+        padding: 30px;
+        background: linear-gradient(to bottom, #d18e0a 0%, #a67513 100%);
+        text-align: center;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        &:after{
+            border: 13px solid $theme4;
+            border-color: transparent $theme4 $theme4 transparent;
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 0px;
+        }
+        &::before{
+            border: 13px solid $theme4;
+            border-color: transparent transparent $theme4 $theme4;
+            content: "";
+            position: absolute;
+            right: -26px;
+            top: 0px;
+        }
+        & .lookingheading{
+            font-size: 16px;
+            color: $white;
+            font-weight: 300;
+            // margin-bottom: 5px;
+
+        }
+        & .pera{
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 0;
+        }
+        & .skBtn{
+            font-size: 16px;
+            color: $white;
+        }
+    }
+    & .locationSection{
+        & .icon{
+            width: 30px;
+            height: 30px;
+        }
+        & .subHeading{
+            font-size: 13px;
+            font-weight: 300;
+            color: #aaa;
+        }
+        & .mainpera{
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+        }
+    }
+    & .form_footer{
+        margin-top: -200px;
+        z-index: 5;
+        & .top-heading-form{
+            & .inner{
+                background: $theme3;
+                padding: 15px;
+                // text-align: center;
+                & .innerHeading{
+                    font-size: 30px;
+                    color: $white;
+                    line-height: 41px;
+                }
+                &  .innerPera{
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+        }
+        & .bottom-form{
+            & .inner{
+                background-color: $white;
+            padding: 15px;
+
+                & .contactFormRight{
+                    & .inputGroup{
+                        border: 0 !important;
+                        border-bottom: 1px solid #ebebeb !important;
+                        & .iconForm{
+                            width: 40px;
+                            height: 40px;
+                            position: relative;
+                            &::after{
+                                width: 2px;
+                                height: 20px;
+                                position: absolute;
+                                content: "";
+                                right: 0px;
+                                background-color: #ebebeb;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        & .inputText{
+                            font-size: 14px;
+                            color:$black ;
+                            font-weight: 300;
+                            &::placeholder{
+                                font-size: 14px;
+                                color: $black;
+                            }
+                        }
+                 
+                    }
+                    & .formLable{
+                        font-size: 14px;
+                        color: $black;
+                        font-weight: 300;
+                    }
+                    & .inputcapture{
+                        color: $black;
+                        font-size: 14px;
+                    }
+                    & .pera{
+                        font-size: 14px;
+                        color: $black;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xxl) {
+    .contactForm{
+
+        & .lookingFooter{
+
+            &:after{
+
+            }
+            &::before{
+
+            }
+            & .lookingheading{
+  
+    
+            }
+            & .pera{
+
+            }
+            & .skBtn{
+           
+            }
+        }
+        & .locationSection{
+            & .icon{
+            
+            }
+            & .subHeading{
+         
+            }
+            & .mainpera{
+        
+            }
+        }
+        & .form_footer{
+   
+            & .top-heading-form{
+                & .inner{
+
+                    & .innerHeading{
+               
+                    }
+                    &  .innerPera{
+             
+                    }
+                }
+            }
+            & .bottom-form{
+                & .inner{
+        
+    
+                    & .contactFormRight{
+                        & .inputGroup{
+                    
+                            & .iconForm{
+                       
+                                &::after{
+                          
+                                }
+                            }
+                            & .inputText{
+                   
+                                &::placeholder{
+                          
+                                }
+                            }
+                     
+                        }
+                        & .formLable{
+                     
+                        }
+                        & .inputcapture{
+                     
+                        }
+                        & .pera{
+              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .contactForm{
+
+        & .lookingFooter{
+
+            &:after{
+
+            }
+            &::before{
+
+            }
+            & .lookingheading{
+  
+    
+            }
+            & .pera{
+
+            }
+            & .skBtn{
+           
+            }
+        }
+        & .locationSection{
+            & .icon{
+            
+            }
+            & .subHeading{
+         
+            }
+            & .mainpera{
+                font-size: 12px;
+            }
+        }
+        & .form_footer{
+   
+            & .top-heading-form{
+                & .inner{
+
+                    & .innerHeading{
+                        font-size: 25px;
+                        line-height: 34px;
+                    }
+                    &  .innerPera{
+             
+                    }
+                }
+            }
+            & .bottom-form{
+                & .inner{
+        
+    
+                    & .contactFormRight{
+                        & .inputGroup{
+                    
+                            & .iconForm{
+                       
+                                &::after{
+                          
+                                }
+                            }
+                            & .inputText{
+                   
+                                &::placeholder{
+                          
+                                }
+                            }
+                     
+                        }
+                        & .formLable{
+                     
+                        }
+                        & .inputcapture{
+                     
+                        }
+                        & .pera{
+              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .contactForm{
+        margin-top: 70px;
+
+        & .lookingFooter{
+
+            &:after{
+
+            }
+            &::before{
+
+            }
+            & .lookingheading{
+  
+    
+            }
+            & .pera{
+
+            }
+            & .skBtn{
+           
+            }
+        }
+        & .locationSection{
+            & .icon{
+            
+            }
+            & .subHeading{
+         
+            }
+            & .mainpera{
+        
+            }
+        }
+        & .form_footer{
+            margin-top: 0;
+            & .top-heading-form{
+                & .inner{
+
+                    & .innerHeading{
+               
+                    }
+                    &  .innerPera{
+             
+                    }
+                }
+            }
+            & .bottom-form{
+                & .inner{
+        
+    
+                    & .contactFormRight{
+                        & .inputGroup{
+                    
+                            & .iconForm{
+                       
+                                &::after{
+                          
+                                }
+                            }
+                            & .inputText{
+                   
+                                &::placeholder{
+                          
+                                }
+                            }
+                     
+                        }
+                        & .formLable{
+                     
+                        }
+                        & .inputcapture{
+                     
+                        }
+                        & .pera{
+              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .contactForm{
+
+        & .lookingFooter{
+
+            &:after{
+
+            }
+            &::before{
+
+            }
+            & .lookingheading{
+  
+    
+            }
+            & .pera{
+                font-size: 18px;
+            }
+            & .skBtn{
+           
+            }
+        }
+        & .locationSection{
+            & .icon{
+            
+ 
+
+            }
+            & .subHeading{
+         
+            }
+            & .mainpera{
+        
+            }
+        }
+        & .form_footer{
+   
+            & .top-heading-form{
+                & .inner{
+
+                    & .innerHeading{
+               
+                    }
+                    &  .innerPera{
+             
+                    }
+                }
+            }
+            & .bottom-form{
+                & .inner{
+        
+    
+                    & .contactFormRight{
+                        & .inputGroup{
+                    
+                            & .iconForm{
+                       
+                                &::after{
+                          
+                                }
+                            }
+                            & .inputText{
+                   
+                                &::placeholder{
+                          
+                                }
+                            }
+                     
+                        }
+                        & .formLable{
+                     
+                        }
+                        & .inputcapture{
+                     
+                        }
+                        & .pera{
+              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .contactForm{
+
+        & .lookingFooter{
+            padding: 15px;
+            &:after{
+
+            }
+            &::before{
+
+            }
+            & .lookingheading{
+                font-size: 12px;
+    
+            }
+            & .pera{
+                font-size: 15px;
+            }
+            & .skBtn{
+                font-size: 14px;
+            }
+        }
+        & .locationSection{
+            & .icon{
+                width: 18px;
+                height: 18px;
+            }
+            & .subHeading{
+         
+            }
+            & .mainpera{
+        
+            }
+        }
+        & .form_footer{
+   
+            & .top-heading-form{
+                & .inner{
+
+                    & .innerHeading{
+                        font-size: 19px;
+                        line-height: 25px;
+                    }
+                    &  .innerPera{
+                        font-size: 14px;
+                    }
+                }
+            }
+            & .bottom-form{
+                & .inner{
+        
+    
+                    & .contactFormRight{
+                        & .inputGroup{
+                    
+                            & .iconForm{
+                       
+                                &::after{
+                          
+                                }
+                            }
+                            & .inputText{
+                   
+                                &::placeholder{
+                          
+                                }
+                            }
+                     
+                        }
+                        & .formLable{
+                     
+                        }
+                        & .inputcapture{
+                     
+                        }
+                        & .pera{
+              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// contact form section end 
+
+
+// portfolio section start 
+
+
+.portfolio_list_wrapper{
+    & .box {
+        border-radius: 20px;
+        overflow: hidden;
+        transition: .4s ease-in-out;
+        &:hover{
+            & img{
+                transform: scale(1.1);
+            }
+            & .overlay{
+
+                & .img1{
+                    transform: rotate(-10deg);
+                }
+                & .img3{
+                    transform: rotate(10deg);
+                }
+            }
+            & .cardBtn{
+                opacity: 1;
+            }
+        }
+    
+        & .portfolio_logo {
+            width: 76px;
+            height: 76px;
+            border-radius: 10px;
+            background: #fff !important;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img{
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .portfolioHeading{
+            font-size: 30px;
+            color: #fff;
+            font-weight: 600;
+            text-align: left;
+            margin: 0;
+            & .subheadingcard{
+                font-size: 16px;
+            }
+        }
+        & .overlay  {
+            width: 100%;
+            padding: 20px 0;
+            transition: .4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                border-radius: 20px;
+                max-width: 154px;
+                transition: .4s ease all;
+            }
+           & .img2 {
+                z-index: 9;
+                margin: 0 -50px;
+                max-width: 175px;
+                transition: .4s ease all;
+
+            }
+            
+        }
+        & .cardBtn {
+            margin-top: 20px;
+            background: rgba(0,0,0,.2) !important;
+            color: #fff;
+            padding: 14px 34px;
+            border-radius: 40px;
+            font-size: 16px;
+            opacity: .7;
+            color: #fff;
+            font-size: 16px;
+            opacity: .7;
+            transition: all 0.3s ease-in-out;
+            & .arrowRight{
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+   
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .portfolio_list_wrapper{
+        & .box {
+     
+            &:hover{
+                & img{
+                  
+                }
+                & .overlay{
+    
+                    & .img1{
+               
+                    }
+                    & .img3{
+             
+                    }
+                }
+                & .cardBtn{
+    
+                }
+            }
+        
+            & .portfolio_logo {
+      
+                & img{
+                 
+                }
+            }
+            & .portfolioHeading{
+                & .subheadingcard{
+                 
+                }
+            }
+            & .overlay  {
+    
+                & img{
+         
+                }
+               & .img2 {
+
+    
+                }
+                
+            }
+            & .cardBtn {
+      
+                & .arrowRight{
+                
+                }
+            }
+       
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .portfolio_list_wrapper{
+        & .box {
+     
+            &:hover{
+                & img{
+                  
+                }
+                & .overlay{
+    
+                    & .img1{
+               
+                    }
+                    & .img3{
+             
+                    }
+                }
+                & .cardBtn{
+    
+                }
+            }
+        
+            & .portfolio_logo {
+                width: 60px;
+                height: 60px;
+                & img{
+                 
+                }
+            }
+            & .portfolioHeading{
+                font-size: 25px;
+                & .subheadingcard{
+                 font-size: 14px;
+                }
+            }
+            & .overlay  {
+    
+                & img{
+                    // transform: rotate(0deg);
+         
+                }
+               & .img1 {
+                transform: rotate(-10deg);
+    
+                }
+                & .img3 {
+                    transform: rotate(10deg);
+        
+                    }
+                
+            }
+            & .cardBtn {
+      
+                & .arrowRight{
+                
+                }
+            }
+       
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .portfolio_list_wrapper{
+        & .box {
+     
+            &:hover{
+                & img{
+                  
+                }
+                & .overlay{
+    
+                    & .img1{
+               
+                    }
+                    & .img3{
+             
+                    }
+                }
+                & .cardBtn{
+    
+                }
+            }
+        
+            & .portfolio_logo {
+      
+                & img{
+                 
+                }
+            }
+            & .portfolioHeading{
+                & .subheadingcard{
+                 
+                }
+            }
+            & .overlay  {
+    
+                & img{
+         
+                }
+               & .img2 {
+
+    
+                }
+                
+            }
+            & .cardBtn {
+      
+                & .arrowRight{
+                
+                }
+            }
+       
+        }
+    }
+}
+
+
+
+// portfolio section end 
+
+
+// ctaSectionMain start 
+
+.ctaSectionMain{
+    background-image: url(../img/index/ctaImg.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .ctaHeading{
+        font-size: 32px;
+        color: $white;
+        font-weight: 600;
+        text-align: center;
+    }
+    & .ctaPera{
+        font-size: 18px;
+        color: $white;
+        font-weight: 400;
+        text-align: center;
+
+    }
+    & .btn_outline{
+        font-size: 18px;
+        border-radius: 100px;
+        border: 2px solid $white;
+        display: inline-block;
+        padding: 10px 20px;
+        position: relative;
+        color: $white;
+        font-weight: 400;
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: $theme4 !important;
+            border: 2px solid $theme4;
+
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .ctaSectionMain{
+
+        & .ctaHeading{
+            font-size: 30px;
+        }
+        & .ctaPera{
+            font-size: 16px;
+    
+        }
+        & .btn_outline{
+            font-size: 16px;
+            &:hover{
+          
+    
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ctaSectionMain{
+
+        & .ctaHeading{
+    
+        }
+        & .ctaPera{
+            font-size: 14px;
+   
+    
+        }
+        & .btn_outline{
+            font-size: 14px;
+  
+            &:hover{
+          
+    
+            }
+        }
+    }
+}
+
+// ctaSectionMain end 
+
+// whyChooseImg section start
+
+    .whyChooseImg{
+        background: linear-gradient(179deg, #080038 0%, #000 100%);
+        & .imgSubheading{
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .imgHeading{
+            font-size: 40px !important;
+            font-weight: 600 !important;
+            color: $theme4;
+            // line-height: 112.5% !important;
+            // text-transform: capitalize !important;
+            // background: linear-gradient(264deg, #ff745c 0%, #9dacff 100%) !important;
+            // background-clip: text !important;
+            // -webkit-background-clip: text !important;
+            // -webkit-text-fill-color: transparent !important;
+        }
+        & .pera{
+            color:$white;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        & .brand-quality {
+            border: 1px solid #404040;
+            border-radius: 26px;
+            transition: all 1s ease;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                border-color: $theme4;
+                & .quality-icon {
+                    & svg{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            & .cardHeading{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                color: #fff;
+                margin-top: 26px;
+                text-align: center;
+            }
+            & .quality-icon{
+                transition: all 0.3s ease-in-out;
+                & svg{
+                transition: all 0.3s ease-in-out;
+                }
+
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .whyChooseImg{
+     
+            & .imgSubheading{
+     
+            }
+            & .imgHeading{
+        
+            }
+            & .pera{
+           
+            }
+            & .brand-quality {
+                padding: 36px 22px;
+                &:hover{
+             
+                    & .quality-icon {
+                        & svg{
+                          
+                        }
+                    }
+                }
+                & .cardHeading{
+            
+                }
+                & .quality-icon{
+                   
+                    & svg{
+                   
+                    }
+    
+                }
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(lg) {
+        .whyChooseImg{
+     
+            & .imgSubheading{
+     
+            }
+            & .imgHeading{
+        
+            }
+            & .pera{
+           
+            }
+            & .brand-quality {
+       
+                &:hover{
+             
+                    & .quality-icon {
+                        & svg{
+                          
+                        }
+                    }
+                }
+                & .cardHeading{
+            
+                }
+                & .quality-icon{
+                   
+                    & svg{
+                   
+                    }
+    
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .whyChooseImg{
+     
+            & .imgSubheading{
+                font-size: 14px;
+            }
+            & .imgHeading{
+                font-size: 35px !important;
+                line-height: 42px;
+            }
+            & .pera{
+                font-size: 16px;
+            }
+            & .brand-quality {
+       
+                &:hover{
+             
+                    & .quality-icon {
+                        & svg{
+                          
+                        }
+                    }
+                }
+                & .cardHeading{
+                    font-size: 18px;
+                }
+                & .quality-icon{
+                   
+                    & svg{
+                   
+                    }
+    
+                }
+            }
+        }
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .whyChooseImg{
+     
+            & .imgSubheading{
+                font-size: 12px;
+            }
+            & .imgHeading{
+                font-size: 28px !important;
+                line-height: 35px;
+            }
+            & .pera{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            & .brand-quality {
+                padding: 21px 9px;
+                border-color: $theme4;
+                border-radius: 10px;
+                &:hover{
+             
+                    & .quality-icon {
+                        & svg{
+                          
+                        }
+                    }
+                }
+                & .cardHeading{
+                    font-size: 15px;
+                }
+                & .quality-icon{
+                   
+                    & svg{
+                   
+                    }
+    
+                }
+            }
+        }
+    }
+    
+
+// whyChooseImg section end 
+
+
+.weHaveServed{
+    background: #253857;
+    text-align: center;
+    & .servedHeading{
+        color: $white;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    & .peraServed{
+        font-size: 15px;
+        line-height: 25px;
+        color: #B8B8B8;
+    }
+    & .sociallogoo{
+        word-wrap: break-word;
+        & .cardServed{
+            display: inline-block;
+            width: 19%;
+            margin: 30px 0px 0px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                & i{
+                    & img{
+                        transform: scale(0.9);
+                    }
+                }
+            }
+            & .peraCard{
+                color: $white;
+                text-transform: capitalize;
+                font-size: 13px;
+                text-align: center;
+                margin-top: 10px;
+            }
+            & i{
+                & img{
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+   
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .weHaveServed{
+ 
+        & .servedHeading{
+
+        }
+        & .peraServed{
+  
+        }
+        & .sociallogoo{
+          
+            & .cardServed{
+      
+                &:hover{
+                    & i{
+                        & img{
+                           
+                        }
+                    }
+                }
+                & .peraCard{
+         
+                }
+                & i{
+                    & img{
+                        
+                    }
+                }
+            }
+       
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .weHaveServed{
+ 
+        & .servedHeading{
+
+        }
+        & .peraServed{
+            & br{
+                display: none;
+            }
+        }
+        & .sociallogoo{
+          
+            & .cardServed{
+                width: 31%;
+                &:hover{
+                    & i{
+                        & img{
+                           
+                        }
+                    }
+                }
+                & .peraCard{
+         
+                }
+                & i{
+                    & img{
+                        
+                    }
+                }
+            }
+       
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .weHaveServed{
+ 
+        & .servedHeading{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        & .peraServed{
+            font-size: 14px;
+            line-height: 23px;
+        }
+        & .sociallogoo{
+          
+            & .cardServed{
+                width: 49%;
+                &:hover{
+                    & i{
+                        & img{
+                           
+                        }
+                    }
+                }
+                & .peraCard{
+         
+                }
+                & i{
+                    & img{
+                        
+                    }
+                }
+            }
+       
         }
     }
 }
